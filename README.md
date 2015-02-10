@@ -16,9 +16,9 @@ Repo initialization:
     
 Repo initialization for specific device:
 
-    $ repo init -u https://github.com/LittleMinions/platform_manifest.git -b lp5.0 -g         all,-notdefault,<devicename>,<vendorname>
+    $ repo init -u https://github.com/LittleMinions/platform_manifest.git -b lp5.0 -g all,-notdefault,<devicename>,<vendorname>
 
-
+ 
 sync repo :
 
     $ repo sync
