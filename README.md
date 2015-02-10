@@ -1,4 +1,4 @@
-[Android Ice Cold Project](http://aicp-rom.com)
+The Little Minions Vacation
 ====================================
 
 
@@ -12,7 +12,11 @@ Initializing Repository
 
 Repo initialization:
 
-    $ repo init -u https://github.com/AICP/platform_manifest.git -b lp5.0
+    $ repo init -u https://github.com/LittleMinions/platform_manifest.git -b lp5.0
+    
+Repo initialization for specific device:
+
+    $ repo init -u https://github.com/LittleMinions/platform_manifest.git -b lp5.0 -g         all,-notdefault,<devicename>,<vendorname>
 
 
 sync repo :
@@ -33,6 +37,6 @@ After the sync is finished, please read the [instructions from the Android site]
 You can also build (and see how long it took) for specific devices like this:
 
     . build/envsetup.sh
-    time brunch m7
+    time brunch <device>
 
 Remember to `make clobber` every now and then!
